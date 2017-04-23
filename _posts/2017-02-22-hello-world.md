@@ -1,8 +1,10 @@
-# Hello World
+---
+title: Hola Mundo
+---
 
-Testing Blog
+Testing Blog with Jekyll
 
-# A section
+## A section
 
 Sample content...
 
