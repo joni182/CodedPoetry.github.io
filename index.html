@@ -1,20 +1,37 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
-
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>Coded Poetry</title>
+    <style type="text/css">
+      body { 
+        text-align: center; 
+        padding: 100px; 
+        background-image: url(building.png);
+      }
+      h1 { font-size: 40px; }
+      body { 
+        font: 20px Helvetica, sans-serif; 
+        color: #333; 
+      }
+      #article { 
+        display: block; 
+        text-align: left; 
+        width: 650px; 
+        margin: 0 auto; 
+      }
+      a { color: #dc8100; text-decoration: none; }
+      a:hover { color: #333; text-decoration: none; }
+    </style>
+ 
+</head>
+<body>
+    <div id="article">
+    <h1>Our site is getting built and some love.</h1>
+    <div>
+        <p>I apologize for the inconvenience, but I'm already working on the site. You can still contact me at <a href="mailto:">ferllarom@gmail.com</a> or at <a href="https://twitter.com/NandoLlaca">@NandoLlaca</a>.  I'll be back up soon!</p>
+        <p>&mdash; Fernando</p>
+    </div>
+    </div>
+</body>
+</html>
