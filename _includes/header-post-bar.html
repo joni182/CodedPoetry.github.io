@@ -1,6 +1,16 @@
 <header class="bar-header" role="banner">
 	{% include menu-search.html %}
 
+    <h2> <a href="/">{{ site.name }} </a> </h2>
+
+</header>
+<header class="post-title container">
+    {% if page.date %}
+        <time itemprop="datePublished" datetime="{{ page.date }}" class="date">{{ page.date | date_to_string }}</time>
+    {% endif %}
+    <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+    <p itemprop="description" class="subtitle">{{ page.description }}</p>
+    <!-- <a href="/">{{ site.name }}</a> -->
 </header>
 <!--
 <header class="header-post" role="banner">
