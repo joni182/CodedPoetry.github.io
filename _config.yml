@@ -1,9 +1,8 @@
 # Site settings
-name: Coded Poetry
-title: and other technical thoughts...
+title: Coded Poetry
 description: and other technical thoughts...
 #baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
-url: "http://localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "http://155882fb.ngrok.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Fernando Llaca
