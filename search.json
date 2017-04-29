@@ -1,6 +1,20 @@
 ---
 ---
+
+{% assign pages = site.pages | where: 'searchable', 'true' %}
+
 [
+  {% if pages.size > 0 %}
+    {% for page in pages %}
+      {
+        "title"    : "{{ page.title | escape }}",
+        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "Page"
+
+      }, 
+    {% endfor %}
+  {% endif %}
+
   {% for post in site.posts %}
     {
       "title"    : "{{ post.title | escape }}",
