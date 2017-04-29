@@ -1,7 +1,7 @@
 # Site settings
 name: Coded Poetry
 title: Snippets and technical thoughts
-description: Snippets and technical thoughts
+description: Snippets and other technical thoughts
 #baseurl: "/will-jekyll-template" # the subpath of your site, e.g. /blog
 url: "http://localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
@@ -12,7 +12,7 @@ user_title: Poetry Developer
 email: ferllarom@gmail.com
 twitter_username: NandoLlaca
 github_username:  fllaca
-gplus_username:  lorem_ipsum
+gplus_username:  fllaca
 disqus_username: fllaca
 
 # Build settings
