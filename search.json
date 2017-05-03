@@ -1,0 +1,27 @@
+---
+---
+
+{% assign pages = site.pages | where: 'searchable', 'true' %}
+
+[
+  {% if pages.size > 0 %}
+    {% for page in pages %}
+      {
+        "title"    : "{{ page.title | escape }}",
+        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "Page"
+
+      }, 
+    {% endfor %}
+  {% endif %}
+
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.categories }}",
+      "tags"     : "{{ post.tags | array_to_sentence_string }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date | date_to_string}}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
