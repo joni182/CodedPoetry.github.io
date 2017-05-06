@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Certificados autofirmados en un comando!"
-image: '/assets/img/'
 description: 'Os dejo un script para generar certificados autofirmados en un solo comando '
 tags:
 - linux 
