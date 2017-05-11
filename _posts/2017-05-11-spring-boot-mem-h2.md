@@ -8,7 +8,7 @@ tags:
 - database
 categories:
 - Snippets
-twitter_text: 'Base de datos H2 en memoria con Spring Boot'
+twitter_text: '#Snippet! Test @h2database en memoria con @springboot'
 ---
 
 Para hacer pruebas a menudo nos viene bien utilizar una **base de datos en memoria**, y precargarla con un script _.sql_ que tenemos con nuestros datos de prueba predefinidos. Aqui tenemos en dos pasos cómo hacer esta configuración en Spring Boot:
