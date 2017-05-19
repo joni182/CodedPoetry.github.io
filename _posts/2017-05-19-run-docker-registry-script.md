@@ -2,8 +2,7 @@
 layout: post
 title: "Run Docker Registry Script"
 date: 2017-05-19 18:46:42
-image: '/assets/img/'
-description: Como ejecutar un "Docker registry" privado en dos pasos para usar en entornos locales
+description: Como ejecutar un Docker registry privado en dos pasos para usar en entornos locales
 tags:
 - docker
 categories: 
