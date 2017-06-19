@@ -22,7 +22,7 @@ var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
  */
 gulp.task('jekyll-build', function (done) {
 	browserSync.notify(messages.jekyllBuild);
-	return cp.spawn(jekyllCommand, ['build', '--drafts'], {stdio: 'inherit'})
+	return cp.spawn(jekyllCommand, ['build', '--drafts', '--future'], {stdio: 'inherit'})
 		.on('close', done);
 });
 
