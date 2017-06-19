@@ -23,7 +23,7 @@ En este post veremos como crear un pequeño proyecto de ejemplo de una aplicaci�
 ## Pasos
 
 ### 1. Fork (o clona) el proyecto de ejemplo
-He creado un proyecto de ejemplo con una aplicación muy sencilla para registrar puntuaciones de usuarios. Este ejemplo usa las siguietes _features_ de Firebase:
+He creado un [proyecto de ejemplo](https://github.com/fllaca/firebase-sample-app) con una aplicación muy sencilla para registrar puntuaciones de usuarios. Este ejemplo usa las siguietes _features_ de Firebase:
 * **Realtime Database**: el servicio de base de datos donde guardaremos la info.
 * **Cloud Functions**: el servicio para crear "handlers" de peticiones HTTP, con el que crearemos nuestra API REST
 * **Hosting**: con este servicio publicaremos archivos y contenido estático (HTML, CSS..., el "front", vamos)
