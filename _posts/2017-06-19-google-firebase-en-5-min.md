@@ -8,7 +8,7 @@ tags:
 - FaaS
 categories:
 - Samples
-twitter_text:
+twitter_text: 'Google Firebase en 5 minutos'
 ---
 
 Probablemente ya hayas oído hablar de [Functions as a Service (FaaS)](https://en.wikipedia.org/wiki/Function_as_a_Service), o arquitecturas Server-Less, seguramente con _AWS Lambda_. **Google** no podía ser menos y también ofrece estos servicios, pero además ha dado un paso más con [Firebase](https://firebase.google.com/), un conjunto de servicios totalmente integrados para _hosting_, aplicaciones _server-less_, y almacenamiento de información en base de datos que te permiten desarrollar una aplicación web con muy poco esfuerzo.
