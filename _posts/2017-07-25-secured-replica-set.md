@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Secured Communication Between Replica Set Members"
+author: pablo
 date: 2017-07-25 19:00:00
 description: ¡Despliega un entorno de pruebas de Openstack en tu portátil!
 tags: MongoDB Databases Security
-categories: Samples
+categories: Scripting
 twitter_text: Secured Communication Between Replica Set Members
 ---
 
@@ -25,7 +26,7 @@ Además crearemos un usuario root para poder administrar la base de datos y los 
 # Usage
 #
 # $ ./secured_replica_set.sh 27017 username	password
-# Will deploy a replica set with one primary and two secondaries in port range [27017 - 27019]. 
+# Will deploy a replica set with one primary and two secondaries in port range [27017 - 27019].
 # In addition second and third parameter is for creating a root user to administrate the replica set
 
 MONGO_KEY_FILE='mongodb-keyfile'
@@ -69,7 +70,7 @@ mongo admin --port $1 --eval "db.createUser($USER_CONFIG)"
 echo "Root User Created"
 ```
 
-Como podéis observar antes de crear nuestro usuario root hemos levantado los miembros del replica set con la opción **--auth** que activa el control de acceso a los usuarios. Si hemos activado esta opción .. ¿cómo hemos sido capaz de crear un usuario root?. 
+Como podéis observar antes de crear nuestro usuario root hemos levantado los miembros del replica set con la opción **--auth** que activa el control de acceso a los usuarios. Si hemos activado esta opción .. ¿cómo hemos sido capaz de crear un usuario root?.
 
 Muy sencillo! Gracias al **Localhost Exception** de Mongo. Para tener que evitar la tediosa tarea de levantar un servidor sin la seguridad activa, crear un usuario y volver a redesplegar con la seguridad activa, Mongo nos permite crear un usuario en la base de datos admin y a partir de ahí se activa la seguridad (eso sí, solo podemos hacerlo desde la máquina donde está desplegado el servidor).
 
@@ -82,6 +83,3 @@ mongo admin --port puerto -u username -p password
 ```
 
 Espero que os sirva de ayuda!.
-
-
-
