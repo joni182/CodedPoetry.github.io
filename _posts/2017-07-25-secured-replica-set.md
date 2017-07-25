@@ -3,7 +3,7 @@ layout: post
 title: "Secured Communication Between Replica Set Members"
 author: pablo
 date: 2017-07-25 19:00:00
-description: ¡Despliega un entorno de pruebas de Openstack en tu portátil!
+description: ¡Despliega un replica set con comunicaciones seguras en  segundos!
 tags: MongoDB Databases Security
 categories: Scripting
 twitter_text: Secured Communication Between Replica Set Members
